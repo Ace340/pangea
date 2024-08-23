@@ -8,12 +8,23 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.fondo-color{
+  background-color: #E0E2DB;
+
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+.shadow-card {
+  --tw-shadow: 0px 35px 120px -15px #211e35;
+  --tw-shadow-colored: 0px 35px 120px -15px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 body {
@@ -30,4 +41,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.bebas-neue {
+  font-family: var(--font-bebas);
+}
+
+.barlow {
+  font-family: var(--font-barlow);
 }
